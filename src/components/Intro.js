@@ -6,22 +6,91 @@ import profile from "../res/developer.jpg";
 function Intro() {
   return (
     <Holder>
-      <ImgHolder></ImgHolder>
+      <ImgHolder>
+        <Terminal>
+          <TaskBar>
+            <Button1></Button1>
+            <Button2></Button2>
+            <Button3></Button3>
+          </TaskBar>
+          <Content>
+            <br />
+            Hello ! My Self Yash Dabhade ... 🤠, <br /> <br />
+            Passionate programmer with an aim 🎯 to create a positive impact on
+            the society... 🌟 <br /> <br /> MERN FULL STACK WEB DEVELOPER 👨‍💻 !
+            with live projects 🌎
+          </Content>
+        </Terminal>
+      </ImgHolder>
     </Holder>
   );
 }
 
 const Holder = styled.div`
+  margin-top:30px;
   display: flex
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 10%;
   width: 100%;
 `;
 
-const Profile = styled.img`
-  width: 500px;
+const Terminal = styled.div`
+  border: 1px solid white;
+  width: 1000px;
+
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+`;
+
+const Content = styled.div`
+  border: 1px solid white;
+  padding: 20px;
+  width: auto;
   height: 400px;
+  background: #282c34;
+  border-radius: 0px 0px 5px 5px;
+  font-family: "VT323", monospace;
+  color: white;
+  font-size: 30px;
+`;
+
+const TaskBar = styled.div`
+  display: flex;
+  border-radius: 5px 5px 0px 0px;
+  align-items: center;
+  padding: 3px;
+  justify-content: start;
+  gap: 5px;
+  background: #494b4b;
+  border: 1px solid white;
+  height: 50px;
+`;
+
+const Button1 = styled.div`
+  border: 2px solid white;
+  background: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+`;
+
+const Button2 = styled.div`
+  border: 2px solid white;
+  background: yellow;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+`;
+
+const Button3 = styled.div`
+  border: 2px solid white;
+  background: green;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 `;
 
 const ImgHolder = styled.div`
@@ -29,8 +98,8 @@ const ImgHolder = styled.div`
   align-items: center;
   justify-content: center;
   height: 800px;
-  width: 800px;
-  border-radius: 80% 30% 8% 80%;
+  width: 1200px;
+  border-radius: 80%;
   background: url(${profile_holder}) center center/cover no-repeat;
 `;
 

@@ -45,7 +45,7 @@ const Title = styled.h2`
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     border-radius: 4px;
     background-color: purple;
     bottom: 0;
