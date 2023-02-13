@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import profile_holder from "../res/profile_holder.jpg";
-import profile from "../res/developer.jpg";
+import Typer from "./Typer";
 
 function Intro() {
   return (
@@ -14,11 +14,7 @@ function Intro() {
             <Button3></Button3>
           </TaskBar>
           <Content>
-            <br />
-            Hello ! My Self Yash Dabhade ... 🤠, <br /> <br />
-            Passionate programmer with an aim 🎯 to create a positive impact on
-            the society... 🌟 <br /> <br /> MERN FULL STACK WEB DEVELOPER 👨‍💻 !
-            with live projects 🌎
+            <Typer />
           </Content>
         </Terminal>
       </ImgHolder>
@@ -27,8 +23,8 @@ function Intro() {
 }
 
 const Holder = styled.div`
-  margin-top:30px;
-  display: flex
+  margin-top: 30px;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 10%;
@@ -54,7 +50,7 @@ const Content = styled.div`
   border-radius: 0px 0px 5px 5px;
   font-family: "VT323", monospace;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 `;
 
 const TaskBar = styled.div`
@@ -64,13 +60,15 @@ const TaskBar = styled.div`
   padding: 3px;
   justify-content: start;
   gap: 5px;
-  background: #494b4b;
+  ${"" /* background: #494b4b; */}
+
+  background:#F5F7FA;
   border: 1px solid white;
   height: 50px;
 `;
 
 const Button1 = styled.div`
-  border: 2px solid white;
+  border: 2px solid gray;
   background: red;
   width: 30px;
   height: 30px;
@@ -78,7 +76,7 @@ const Button1 = styled.div`
 `;
 
 const Button2 = styled.div`
-  border: 2px solid white;
+  border: 1px solid gray;
   background: yellow;
   width: 30px;
   height: 30px;
@@ -86,7 +84,7 @@ const Button2 = styled.div`
 `;
 
 const Button3 = styled.div`
-  border: 2px solid white;
+  border: 2px solid gray;
   background: green;
   width: 30px;
   height: 30px;
@@ -100,6 +98,7 @@ const ImgHolder = styled.div`
   height: 800px;
   width: 1200px;
   border-radius: 80%;
+
   background: url(${profile_holder}) center center/cover no-repeat;
 `;
 

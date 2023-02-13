@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import img from "../res/logo.png";
 
 function NavBar() {
   return (
     <Holder>
+      <Img src={img}></Img>
       <Outer>
         <Title>Skills</Title>
         <Title>Projects</Title>
@@ -14,11 +16,16 @@ function NavBar() {
   );
 }
 const Holder = styled.div`
-  display: flex
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 10%;
   width: 100%;
+`;
+
+const Img = styled.img`
+  height: 110px;
+  width: 355px;
 `;
 
 const Outer = styled.div`
