@@ -46,7 +46,8 @@ const Content = styled.div`
   padding: 20px;
   width: auto;
   height: 400px;
-  background: #282c34;
+  ${"" /* background: #282c34; */}
+  background:#0e101a;
   border-radius: 0px 0px 5px 5px;
   font-family: "VT323", monospace;
   color: white;
