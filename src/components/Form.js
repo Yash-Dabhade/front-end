@@ -82,7 +82,7 @@ function Form() {
           </GridItem>
           <GridItem rowSpan={2}>
             <FormLabel marginTop={12} marginLeft={4}>
-              Organiztion
+              Organization
             </FormLabel>
             <Input
               type="text"

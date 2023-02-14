@@ -49,7 +49,7 @@ const Holder = styled.div`
   display: flex;
   align-items: center;
   justify-content: start;
-  height: 1000px;
+  height: 800px;
   flex-direction: column;
 `;
 
