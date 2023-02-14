@@ -4,7 +4,7 @@ const Typer = () => {
   return (
     <TypeAnimation
       sequence={[
-        "Hello ! My Self Yash Dabhade ... 🤠 ", // Types 'One'
+        "Hello ! My Self Yash Dabhade ...  🙋‍♂️ ", // Types 'One'
         1000, // Waits 1s
         "FULL STACK MERN WEB APP DEVELOPER 👨‍💻 with hands on experience on live projects 🌎 ", // Deletes 'One' and types 'Two'
         2000, // Waits 2s

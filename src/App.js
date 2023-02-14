@@ -3,6 +3,7 @@ import styled from "styled-components";
 import NavBar from "./components/NavBar";
 import Intro from "./components/Intro";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar />
       <Intro />
       <Skills />
+      <Contact />
     </Container>
   );
 }

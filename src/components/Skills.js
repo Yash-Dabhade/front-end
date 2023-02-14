@@ -25,10 +25,13 @@ function Skills() {
     "GITHUB",
     "MYSQL",
     "MONGO DB",
+    "POSTMAN",
+    "PHP",
+    "ADOBE XD",
   ];
   return (
     <Holder>
-      <Title> Skills 💡</Title>
+      <Title>Learn about my skills💡</Title>
       <Grid templateColumns="repeat(5, 1fr)" gap={8}>
         {data.map((ele) => {
           return (
