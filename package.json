@@ -15,6 +15,7 @@
     "react-scripts": "5.0.1",
     "react-type-animation": "^2.1.2",
     "styled-components": "^5.3.6",
+    "swiper": "^6.8.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.58.1"
   }
 }

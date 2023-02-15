@@ -15,12 +15,14 @@ import {
 } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 
+import ProjectSlider from "./ProjectSlider";
+
 function Projects() {
   const title = "</> Some of my amazing projects </>";
   return (
     <Holder>
       <Title>{title}</Title>
-      <ProjectCard />
+      <ProjectSlider />
     </Holder>
   );
 }
@@ -36,7 +38,7 @@ const Holder = styled.div`
 const Title = styled.div`
   color: white;
   display: flex;
-  width: 100%;
+  ${"" /* width: 100%; */}
   align-items: center;
 
   justify-content: space-around;

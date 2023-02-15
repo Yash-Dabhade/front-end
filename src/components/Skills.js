@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../res/cropSkillsContainer.png";
+
 import ItemCard from "./ItemCard";
-import bgImg from "../res/pattern2.jpg";
+
 import { Grid, GridItem } from "@chakra-ui/react";
 
 function Skills() {
@@ -36,7 +36,7 @@ function Skills() {
         {data.map((ele) => {
           return (
             <GridItem key={i}>
-              <ItemCard title={ele} path={`./icons/${i++}.png`} />;
+              <ItemCard title={ele} path={`./icons/${i++}.png`} />
             </GridItem>
           );
         })}
