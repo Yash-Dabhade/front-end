@@ -21,13 +21,19 @@ function ProjectCard({ color, title, desc, github, video, imgPath, tags }) {
           <div className="postcard__bar"></div>
           <div className="postcard__preview-txt">{desc}</div>
           <ul className="postcard__tagbox">
-            <li className="tag__item">
-              <i className="fas fa-tag mr-2"></i>
-              {tags}
+            <li className={"tag__item play " + color}>
+              <a href="#">
+                <img width="24px" height="28px" src="./icons/play.png" />
+              </a>
             </li>
             <li className={"tag__item play " + color}>
               <a href="#">
-                <i className="fas fa-play mr-2"></i>Play Demo
+                <img width="22px" src="./icons/github.png" />
+              </a>
+            </li>
+            <li className={"tag__item play " + color}>
+              <a href="#">
+                <img width="24px" height="28px" src="./icons/link.png" />
               </a>
             </li>
           </ul>
@@ -38,9 +44,9 @@ function ProjectCard({ color, title, desc, github, video, imgPath, tags }) {
 }
 
 const Holder = styled.div`
-  margin-top: 150px;
-  margin-right: 120px;
-  width: fit-content;
+  margin-top: 55px;
+  margin-right: 10px;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;

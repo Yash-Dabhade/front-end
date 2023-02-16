@@ -18,7 +18,7 @@ import ProjectCard from "./ProjectCard";
 import ProjectSlider from "./ProjectSlider";
 
 function Projects() {
-  const title = "</> Some of my amazing projects </>";
+  const title = "🚀 Some of my amazing projects 🚀";
   return (
     <Holder>
       <Title>{title}</Title>
@@ -31,7 +31,7 @@ const Holder = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 800px;
+  height: 500px;
   flex-direction: column;
 `;
 
@@ -40,7 +40,6 @@ const Title = styled.div`
   display: flex;
   ${"" /* width: 100%; */}
   align-items: center;
-
   justify-content: space-around;
   height: 100px;
   font-size: 50px;

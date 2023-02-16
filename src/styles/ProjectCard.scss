@@ -111,6 +111,7 @@ a, a:hover {
     text-overflow: ellipsis;
     text-align: justify;
     height: 100%;
+    font-size:20px;
   }
 
   .postcard__tagbox {
@@ -122,10 +123,12 @@ a, a:hover {
     justify-content: center;
 
     .tag__item {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: rgba(83, 83, 83, 0.4);
       border-radius: 3px;
-      padding: 2.5px 10px;
+      padding: 22.5px 20px;
       margin: 0 5px 5px 0;
       cursor: default;
       user-select: none;

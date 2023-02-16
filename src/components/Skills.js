@@ -31,7 +31,7 @@ function Skills() {
   ];
   return (
     <Holder>
-      <Title>Learn about my skills💡</Title>
+      <Title>Hands on Experience on Following Technologies💡</Title>
       <Grid templateColumns="repeat(5, 1fr)" gap={8}>
         {data.map((ele) => {
           return (
