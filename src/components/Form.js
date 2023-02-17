@@ -34,7 +34,8 @@ function Form() {
               type="text"
               value={fname}
               border="1px solid transparent"
-              borderRadius={14}
+              borderRadius={10}
+              style={{ fontWeight: "bold", fontSize: "14px" }}
               marginTop={12}
               width={280}
               height={30}
@@ -52,8 +53,9 @@ function Form() {
               type="text"
               value={lname}
               border="1px solid transparent"
-              borderRadius={14}
+              borderRadius={10}
               marginTop={12}
+              style={{ fontWeight: "bold", fontSize: "14px" }}
               width={280}
               height={30}
               required
@@ -69,8 +71,9 @@ function Form() {
             <Input
               type="email"
               value={email}
+              style={{ fontWeight: "bold", fontSize: "14px" }}
               border="1px solid transparent"
-              borderRadius={14}
+              borderRadius={10}
               height={30}
               marginTop={12}
               width={280}
@@ -87,8 +90,9 @@ function Form() {
             <Input
               type="text"
               value={organization}
+              style={{ fontWeight: "bold", fontSize: "14px" }}
               border="1px solid transparent"
-              borderRadius={14}
+              borderRadius={10}
               marginTop={12}
               height={30}
               width={280}
@@ -105,9 +109,10 @@ function Form() {
             <Textarea
               type="text"
               border="1px solid transparent"
-              borderRadius={14}
+              borderRadius={10}
               marginTop={12}
               width={480}
+              style={{ fontWeight: "bold", fontSize: "14px" }}
               required
               height={120}
               value={message}
@@ -115,7 +120,9 @@ function Form() {
                 setMessage(e.target.value);
               }}
             />
-            <Button>Send Now ⚡️</Button>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=dabhadeyash1111@gmail.com&tf=cm">
+              <Button>Send Now ⚡️</Button>
+            </a>
           </GridItem>
         </Grid>
       </FormControl>
@@ -156,18 +163,16 @@ const Button = styled.button`
   background-size: 300% 100%;
 
   border-radius: 50px;
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
+
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(
     to right,
-    #6253e1,
-    #852d91,
-    #a3a1ff,
-    #f24645
+    #667eea,
+    #764ba2,
+    #6b8dd6,
+    #8e37d7
   );
-  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 
   &:focus {
     outline: none;

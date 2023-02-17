@@ -95,7 +95,7 @@ export default function Footer() {
                   borderBottom: "1px solid #c4c4c4",
                   marginTop: "15px",
                 }}
-                href="mailto:dabhadeyash1111@gmail.com"
+                href="https://mail.google.com/mail/u/0/?fs=1&to=dabhadeyash1111@gmail.com&subjectbox=test&body=helloworld&tf=cm"
               >
                 dabhadeyash1111@gmail.com
               </a>
