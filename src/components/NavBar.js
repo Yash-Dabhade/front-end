@@ -7,10 +7,22 @@ function NavBar() {
     <Holder>
       <Img src={img}></Img>
       <Outer>
-        <Title>Skills</Title>
-        <Title>Projects</Title>
-        <Title>Get in Touch !</Title>
-        <CustomButton>Download CV</CustomButton>
+        <a href="#Skills">
+          <Title>Skills</Title>
+        </a>
+        <a href="#Projects">
+          <Title>Projects</Title>
+        </a>
+        <a href="#Contact">
+          <Title>Get in Touch !</Title>
+        </a>
+        <a
+          href={
+            "https://drive.google.com/file/d/1ON1e4Wq0r9p1cxDe2pRdW1YQx02FYlyu/view?usp=share_link"
+          }
+        >
+          <CustomButton>Download CV</CustomButton>
+        </a>
       </Outer>
     </Holder>
   );

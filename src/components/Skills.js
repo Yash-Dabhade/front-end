@@ -30,7 +30,7 @@ function Skills() {
     "ADOBE XD",
   ];
   return (
-    <Holder>
+    <Holder id="Skills">
       <Title>Hands on Experience on Following Technologies💡</Title>
       <Grid templateColumns="repeat(5, 1fr)" gap={8}>
         {data.map((ele) => {

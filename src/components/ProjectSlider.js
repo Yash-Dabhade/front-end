@@ -35,12 +35,11 @@ function ProjectSlider() {
   return (
     <div className="main-swiper">
       <Swiper
-        effect={"coverflow"}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
-        grabCursor={true}
+        grabCursor={false}
         centeredSlides={true}
         slidesPerView={"auto"}
         coverflowEffect={{
@@ -66,36 +65,6 @@ function ProjectSlider() {
             </SwiperSlide>
           );
         })}
-
-        {/* or use normally  */}
-
-        {/* <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="" />
-        </SwiperSlide> */}
       </Swiper>
     </div>
   );

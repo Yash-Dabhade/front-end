@@ -5,7 +5,7 @@ import img from "../res/illustration.png";
 
 function Contact() {
   return (
-    <Holder>
+    <Holder id="Contact">
       <Title>Let's get in touch with just single click 💁‍♂️! </Title>
       <Container>
         <Illustration />

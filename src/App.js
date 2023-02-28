@@ -22,6 +22,7 @@ function App() {
 
 const Container = styled.div`
   height: auto;
+  scroll-behavior: smooth;
   padding: 10px 10px;
   background: #010203;
   display: flex;

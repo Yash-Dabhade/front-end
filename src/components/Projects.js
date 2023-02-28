@@ -20,7 +20,7 @@ import ProjectSlider from "./ProjectSlider";
 function Projects() {
   const title = "🚀 Some of my amazing projects 🚀";
   return (
-    <Holder>
+    <Holder id="Projects">
       <Title>{title}</Title>
       <ProjectSlider />
     </Holder>
@@ -38,7 +38,7 @@ const Holder = styled.div`
 const Title = styled.div`
   color: white;
   display: flex;
-  ${"" /* width: 100%; */}
+
   align-items: center;
   justify-content: space-around;
   height: 100px;

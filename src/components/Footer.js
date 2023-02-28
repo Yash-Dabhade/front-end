@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="footer__self_bio__container">
             <img
               width="130px"
-              height="150px"
+              height="180px"
               className="footer__self_bio__container__img"
               src={profile}
               alt="Yash Dabhade"
@@ -26,7 +26,49 @@ export default function Footer() {
               <h4 className="footer__self_bio__container__title">
                 Yash Dabhade
               </h4>
+              <p className="footer__self_bio__container__description">
+                Pursing B.Tech At <br />
+                Pillai College of Engineering, New Panvel
+                <br />
+                <br />
+                Completed Diploma in Computer Technology, <br />
+                At Government Polytechnic Pen, Pen
+              </p>
               <ul className="footer__self_bio__container__social_container">
+                <li>
+                  <a
+                    className="footer__self_bio__container__social_link"
+                    href="#"
+                  >
+                    <UseAnimations
+                      animation={instagram}
+                      size={35}
+                      strokeColor="white"
+                      wrapperStyle={{
+                        zIndex: 2000,
+                        position: "relative",
+                        cursor: "pointer",
+                      }}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="footer__self_bio__container__social_link"
+                    href="#"
+                  >
+                    <UseAnimations
+                      animation={twitter}
+                      size={35}
+                      strokeColor="white"
+                      wrapperStyle={{
+                        zIndex: 2000,
+                        position: "relative",
+                        cursor: "pointer",
+                      }}
+                    />
+                  </a>
+                </li>
                 <li>
                   <a
                     className="footer__self_bio__container__social_link"
@@ -135,7 +177,7 @@ export default function Footer() {
             display: "block",
           }}
         >
-          Designed and Developed By @Yash Dabhade 2023
+          Made with ❤️ By Yash Dabhade 2023
         </p>
       </div>
     </footer>
