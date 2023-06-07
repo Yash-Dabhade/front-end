@@ -69,7 +69,6 @@ const TaskBar = styled.div`
 `;
 
 const Button1 = styled.div`
-  border: 2px solid gray;
   background: red;
   width: 30px;
   height: 30px;
@@ -77,7 +76,6 @@ const Button1 = styled.div`
 `;
 
 const Button2 = styled.div`
-  border: 1px solid gray;
   background: yellow;
   width: 30px;
   height: 30px;
@@ -85,7 +83,6 @@ const Button2 = styled.div`
 `;
 
 const Button3 = styled.div`
-  border: 2px solid gray;
   background: green;
   width: 30px;
   height: 30px;

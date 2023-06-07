@@ -32,7 +32,7 @@ function Skills() {
   return (
     <Holder id="Skills">
       <Title>Hands on Experience on Following Technologies💡</Title>
-      <Grid templateColumns="repeat(5, 1fr)" gap={8}>
+      <Grid templateColumns="repeat(4, 1fr)" gap={8}>
         {data.map((ele) => {
           return (
             <GridItem key={i}>
@@ -51,6 +51,7 @@ const Holder = styled.div`
   justify-content: start;
   height: 800px;
   flex-direction: column;
+  padding: 120px 10px;
 `;
 
 const Title = styled.div`
@@ -60,7 +61,7 @@ const Title = styled.div`
   align-items: center;
   justify-content: space-around;
   height: 100px;
-  font-size: 50px;
+  font-size: 45px;
   margin: 20px;
   cursor: pointer;
   font-family: "Rubik", sans-serif;

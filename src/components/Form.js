@@ -102,16 +102,16 @@ function Form() {
               }}
             />
           </GridItem>
-          <GridItem rowSpan={2} colSpan={1}>
+          <GridItem rowSpan={3} colSpan={1}>
             <FormLabel marginTop={12} marginLeft={4}>
               Message
             </FormLabel>
             <Textarea
               type="text"
+              width={"100%"}
               border="1px solid transparent"
               borderRadius={10}
               marginTop={12}
-              width={480}
               style={{ fontWeight: "bold", fontSize: "14px" }}
               required
               height={120}
@@ -153,7 +153,7 @@ const Button = styled.button`
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin: 20px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,6 +172,7 @@ const Button = styled.button`
     #6b8dd6,
     #8e37d7
   );
+  background-color: white;
   box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 
   &:focus {

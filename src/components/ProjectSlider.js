@@ -37,7 +37,7 @@ function ProjectSlider() {
       <Swiper
         autoplay={{
           delay: 2500,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         }}
         grabCursor={false}
         centeredSlides={true}

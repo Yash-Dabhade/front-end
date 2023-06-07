@@ -21,7 +21,7 @@ const Holder = styled.div`
   justify-content: start;
   gap: 40px;
   height: 800px;
-  margin: 30px;
+  margin: 120px 30px;
   flex-direction: column;
 `;
 

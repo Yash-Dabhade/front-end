@@ -1,24 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  GridItem,
-  Text,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Grid,
-  Image,
-  Button,
-  Heading,
-  Stack,
-} from "@chakra-ui/react";
-import ProjectCard from "./ProjectCard";
 
 import ProjectSlider from "./ProjectSlider";
 
 function Projects() {
-  const title = "🚀 Some of my amazing projects 🚀";
+  const title = "Some of my amazing projects 🚀";
   return (
     <Holder id="Projects">
       <Title>{title}</Title>
