@@ -29,6 +29,12 @@ const Holder = styled.div`
   justify-content: center;
   height: 10%;
   width: 100%;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const Terminal = styled.div`
@@ -39,6 +45,11 @@ const Terminal = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  @media (max-width: 650px) {
+    width: 390px;
+    align-self: center;
+  }
 `;
 
 const Content = styled.div`
@@ -46,12 +57,15 @@ const Content = styled.div`
   padding: 20px;
   width: auto;
   height: 400px;
-  ${"" /* background: #282c34; */}
-  background:#0e101a;
+  background: #0e101a;
   border-radius: 0px 0px 5px 5px;
   font-family: "VT323", monospace;
   color: white;
   font-size: 20px;
+  @media (max-width: 650px) {
+    height: 250px;
+    font-size: 10px;
+  }
 `;
 
 const TaskBar = styled.div`
@@ -66,6 +80,10 @@ const TaskBar = styled.div`
   background:#F5F7FA;
   border: 1px solid white;
   height: 50px;
+
+  @media (max-width: 650px) {
+    height: 40px;
+  }
 `;
 
 const Button1 = styled.div`
@@ -73,6 +91,10 @@ const Button1 = styled.div`
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  @media (max-width: 650px) {
+    height: 25px;
+    width: 25px;
+  }
 `;
 
 const Button2 = styled.div`
@@ -80,6 +102,10 @@ const Button2 = styled.div`
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  @media (max-width: 650px) {
+    height: 25px;
+    width: 25px;
+  }
 `;
 
 const Button3 = styled.div`
@@ -87,6 +113,10 @@ const Button3 = styled.div`
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  @media (max-width: 650px) {
+    height: 25px;
+    width: 25px;
+  }
 `;
 
 const ImgHolder = styled.div`
@@ -96,8 +126,14 @@ const ImgHolder = styled.div`
   height: 800px;
   width: 1200px;
   border-radius: 80%;
-
   background: url(${profile_holder}) center center/cover no-repeat;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+  }
 `;
 
 export default Intro;
