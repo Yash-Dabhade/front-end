@@ -33,11 +33,25 @@ const Holder = styled.div`
   justify-content: space-around;
   height: 10%;
   width: 100%;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Img = styled.img`
   height: 110px;
   width: 355px;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+  }
 `;
 
 const Outer = styled.div`
@@ -50,6 +64,12 @@ const Outer = styled.div`
   border-radius: 15px;
   background: #010203;
   gap: 20px;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 `;
 
 const Title = styled.h2`
@@ -76,6 +96,10 @@ const Title = styled.h2`
   &:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+  }
+
+  @media (max-width: 650px) {
+    font-size: 25px;
   }
 `;
 
@@ -123,6 +147,10 @@ const CustomButton = styled.button`
       #f24645
     );
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+
+  @media (max-width: 650px) {
+    width: 300px;
   }
 `;
 
