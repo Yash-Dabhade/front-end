@@ -47,7 +47,7 @@ const Terminal = styled.div`
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
   @media (max-width: 650px) {
-    width: 390px;
+    width: 99%;
     align-self: center;
   }
 `;

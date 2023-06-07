@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Form from "./Form";
-import img from "../res/illustration.png";
 
 function Contact() {
   return (
@@ -23,6 +22,11 @@ const Holder = styled.div`
   height: 800px;
   margin: 120px 30px;
   flex-direction: column;
+  @media (max-width: 650px) {
+    height: fit-content;
+    width: 100%;
+    margin: 50px 0px;
+  }
 `;
 
 const Title = styled.div`
@@ -35,6 +39,12 @@ const Title = styled.div`
   font-size: 50px;
   cursor: pointer;
   font-family: "Rubik", sans-serif;
+  @media (max-width: 650px) {
+    height: fit-content;
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+  }
 `;
 
 const Container = styled.div`
@@ -44,6 +54,13 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 800px;
+  @media (max-width: 650px) {
+    height: fit-content;
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    text-align: center;
+  }
 `;
 
 const Illustration = styled.div`
@@ -71,6 +88,10 @@ const Illustration = styled.div`
   height: 600px;
   width: 40px;
   border: 1px solid white;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
 
 export default Contact;

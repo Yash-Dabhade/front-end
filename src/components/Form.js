@@ -20,12 +20,7 @@ function Form() {
   return (
     <Container>
       <FormControl>
-        <Grid
-          h="480px"
-          templateRows="repeat(3, 1fr)"
-          templateColumns="repeat(2, 1fr)"
-          gap={4}
-        >
+        <GridContainer>
           <GridItem rowSpan={1}>
             <FormLabel marginTop={12} marginLeft={4}>
               First Name
@@ -108,7 +103,7 @@ function Form() {
             </FormLabel>
             <Textarea
               type="text"
-              width={"100%"}
+              width={"280px"}
               border="1px solid transparent"
               borderRadius={10}
               marginTop={12}
@@ -124,7 +119,7 @@ function Form() {
               <Button>Send Now ⚡️</Button>
             </a>
           </GridItem>
-        </Grid>
+        </GridContainer>
       </FormControl>
     </Container>
   );
@@ -138,13 +133,12 @@ const Container = styled.div`
   border-radius: 20px;
   font-family: "Ubuntu", sans-serif;
   background: url(${bg}) center center/cover no-repeat;
-`;
-
-const InsideHolder = styled.div`
-  width: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @media (max-width: 650px) {
+    height: fit-content;
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+  }
 `;
 
 const Button = styled.button`
@@ -193,6 +187,21 @@ const Button = styled.button`
       #f24645
     );
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+
+  @media (max-width: 650px) {
+    font-size: 18px;
+    text-align: center;
+    margin: 18%;
+  }
+`;
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(1, 230px);
   }
 `;
 
