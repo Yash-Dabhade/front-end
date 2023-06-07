@@ -3,8 +3,6 @@ import styled from "styled-components";
 
 import ItemCard from "./ItemCard";
 
-import { Grid, GridItem } from "@chakra-ui/react";
-
 function Skills() {
   let i = 1;
   let data = [
@@ -29,18 +27,18 @@ function Skills() {
     "PHP",
     "ADOBE XD",
   ];
+
   return (
     <Holder id="Skills">
       <Title>Hands on Experience on Following Technologies💡</Title>
-      <Grid templateColumns="repeat(4, 1fr)" gap={8}>
+
+      <GridContainer>
+        {/* <SimpleGrid width={"100%"} minChildWidth="120px" spacing="18px"> */}
         {data.map((ele) => {
-          return (
-            <GridItem key={i}>
-              <ItemCard title={ele} path={`./icons/${i++}.png`} />
-            </GridItem>
-          );
+          return <ItemCard key={i} title={ele} path={`./icons/${i++}.png`} />;
         })}
-      </Grid>
+        {/* </SimpleGrid> */}
+      </GridContainer>
     </Holder>
   );
 }
@@ -52,6 +50,10 @@ const Holder = styled.div`
   height: 800px;
   flex-direction: column;
   padding: 120px 10px;
+  @media (max-width: 650px) {
+    height: fit-content;
+    padding: 80px 4px;
+  }
 `;
 
 const Title = styled.div`
@@ -65,6 +67,21 @@ const Title = styled.div`
   margin: 20px;
   cursor: pointer;
   font-family: "Rubik", sans-serif;
+  @media (max-width: 650px) {
+    height: fit-content;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+`;
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export default Skills;

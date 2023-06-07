@@ -37,32 +37,36 @@ const Card = styled.div`
   background-position: center center;
   background-repeat: no-repeat;
   animation: bg-spin 3s linear infinite;
-  
+  @media (max-width: 650px) {
+    height: 55px;
+    width: 120px;
+  }
+
   @keyframes bg-spin {
     to {
       --border-angle: 1turn;
     }
   }
-  
 
-  
   &:hover {
     animation-play-state: paused;
   }
-}
 
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
-}
-
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
 `;
 
 const Img = styled.img`
   width: 64px;
   height: 64px;
   margin: 5px;
+  @media (max-width: 650px) {
+    height: 25px;
+    width: 25px;
+  }
 `;
 
 const Title = styled.div`
@@ -73,6 +77,10 @@ const Title = styled.div`
   cursor: pointer;
   font-family: "Signika Negative", sans-serif;
   color: white;
+  @media (max-width: 650px) {
+    font-size: 15px;
+    margin: 1px;
+  }
 `;
 
 export default ItemCard;
