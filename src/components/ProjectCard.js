@@ -50,6 +50,14 @@ const Holder = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 650px) {
+    height: fit-content;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    font-size: 25px;
+    text-align: center;
+  }
 `;
 
 export default ProjectCard;

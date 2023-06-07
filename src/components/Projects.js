@@ -19,6 +19,12 @@ const Holder = styled.div`
   justify-content: center;
   height: 500px;
   flex-direction: column;
+  @media (max-width: 650px) {
+    height: fit-content;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
 `;
 
 const Title = styled.div`
@@ -32,6 +38,13 @@ const Title = styled.div`
   margin: 20px;
   cursor: pointer;
   font-family: "Rubik", sans-serif;
+
+  @media (max-width: 650px) {
+    height: fit-content;
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+  }
 `;
 
 export default Projects;
