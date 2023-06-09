@@ -57,6 +57,7 @@ const Holder = styled.div`
     height: fit-content;
     font-size: 25px;
     text-align: center;
+    margin-bottom: 12px;
   }
 `;
 

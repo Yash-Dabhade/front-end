@@ -135,9 +135,11 @@ const Container = styled.div`
   background: url(${bg}) center center/cover no-repeat;
   @media (max-width: 650px) {
     height: fit-content;
-    width: 90%;
+    width: 100%;
     font-size: 18px;
     text-align: center;
+    background-size: 550px;
+    padding: 63px;
   }
 `;
 
@@ -201,7 +203,9 @@ const GridContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   @media (max-width: 650px) {
-    grid-template-columns: repeat(1, 230px);
+    grid-template-columns: repeat(1, 255px);
+    column-gap: 20px;
+    row-gap: 5px;
   }
 `;
 

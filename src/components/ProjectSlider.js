@@ -33,8 +33,9 @@ const data = [
 
 function ProjectSlider() {
   return (
-    <div className="main-swiper">
+    <div className="main-swiper" id="projectSliderContainer">
       <Swiper
+        style={{ maxWidth: "100vw", scrollX: "hidden" }}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -55,7 +56,7 @@ function ProjectSlider() {
         {/* using array */}
         {data.map((ele) => {
           return (
-            <SwiperSlide key={ele.title}>
+            <SwiperSlide maxWidth={"100vw"} key={ele.title}>
               <ProjectCard
                 title={ele.title}
                 desc={ele.desc}
