@@ -10,8 +10,10 @@ const Typer = () => {
         2000, // Waits 2s
         "Passionate programmer with an aim 🎯 to create a positive impact on the society... 🌟",
         2000,
+        "3rd Year CSE Student  🧑‍🎓  At Pillai College Of Engineering, New Panvel ",
+        2000,
         () => {
-          console.log("Done typing!"); // Place optional callbacks anywhere in the array
+          // Place optional callbacks anywhere in the array
         },
       ]}
       wrapper="div"

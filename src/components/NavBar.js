@@ -18,7 +18,7 @@ function NavBar() {
         </a>
         <a
           href={
-            "https://drive.google.com/file/d/1ON1e4Wq0r9p1cxDe2pRdW1YQx02FYlyu/view?usp=share_link"
+            "https://drive.google.com/file/d/1CgpyRyKkQri9pXK02kFSaglSKIevZr0r/view?usp=sharing"
           }
         >
           <CustomButton>Download CV</CustomButton>
