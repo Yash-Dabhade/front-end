@@ -165,6 +165,7 @@ a, a:hover {
 
     .postcard__title {
       font-size: 2rem;
+      margin: 0px 8px;
     }
 
     .postcard__tagbox {
@@ -374,10 +375,14 @@ a, a:hover {
 
 //////////////////////////////////////////
 @media only screen and (max-width: 650px) {
+
+
   .postcard {
     flex-wrap: wrap;
     display: flex;
-    width: 80%;
+    width: 90%;
+    margin-left: 10%;
+    padding: 20px;
     height: fit-content;
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
     border-radius: 10px;
@@ -411,11 +416,11 @@ a, a:hover {
     }
   
     .postcard__title {
-      font-size: 1.75rem;
+      font-size: 18px;
     }
   
     .postcard__img {
-      max-height: 240px;
+      max-height: 200px;
       width: 100%;
       object-fit: cover;
       position: relative;
@@ -447,7 +452,7 @@ a, a:hover {
       text-overflow: ellipsis;
       text-align: justify;
       height: 100%;
-      font-size:10px;
+      font-size:13px;
     }
   
     .postcard__tagbox {
@@ -493,4 +498,52 @@ a, a:hover {
     }
   }
 
+
+  .green::before {
+		background-image: linear-gradient(
+			-80deg,
+			$main-green-rgb-015,
+			transparent 50%
+		);
+	}
+	.green:nth-child(2n)::before {
+		background-image: linear-gradient(
+			80deg,
+			$main-green-rgb-015,
+			transparent 50%
+		);
+	}
+
+	.blue::before {
+		background-image: linear-gradient(
+			-80deg,
+			$main-blue-rgb-015,
+			transparent 50%
+		);
+	}
+	.blue:nth-child(2n)::before {
+		background-image: linear-gradient(80deg, $main-blue-rgb-015, transparent 50%);
+	}
+
+	.red::before {
+		background-image: linear-gradient(-80deg, $main-red-rgb-015, transparent 50%);
+	}
+	.red:nth-child(2n)::before {
+		background-image: linear-gradient(80deg, $main-red-rgb-015, transparent 50%);
+	}
+	
+	.yellow::before {
+		background-image: linear-gradient(
+			-80deg,
+			$main-yellow-rgb-015,
+			transparent 50%
+		);
+	}
+	.yellow:nth-child(2n)::before {
+		background-image: linear-gradient(
+			80deg,
+			$main-yellow-rgb-015,
+			transparent 50%
+		);
+	}
 }

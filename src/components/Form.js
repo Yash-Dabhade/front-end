@@ -139,7 +139,7 @@ const Container = styled.div`
     font-size: 18px;
     text-align: center;
     background-size: 550px;
-    padding: 63px;
+    padding: 54px;
   }
 `;
 
